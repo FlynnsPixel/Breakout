@@ -1,0 +1,753 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="NsightTegraProject">
+    <NsightTegraProjectRevisionNumber>6</NsightTegraProjectRevisionNumber>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Emscripten">
+      <Configuration>Debug</Configuration>
+      <Platform>Emscripten</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Tegra-Android">
+      <Configuration>Debug</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Emscripten">
+      <Configuration>Release</Configuration>
+      <Platform>Emscripten</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Tegra-Android">
+      <Configuration>Release</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{23336FE3-2774-4685-B9DF-4AA97D1C71A3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Samurai</RootNamespace>
+    <ProjectName>Game</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Emscripten'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Emscripten'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">
+    <PlatformToolset />
+    <AndroidTargetAPI>android-14</AndroidTargetAPI>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">
+    <PlatformToolset />
+    <AndroidTargetAPI>android-14</AndroidTargetAPI>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Emscripten'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Emscripten'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Emscripten'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Emscripten'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\AT\Public\Include;nuggeta;</AdditionalIncludeDirectories>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>MSVCRT</IgnoreSpecificDefaultLibraries>
+      <AdditionalDependencies>OpenAL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\AT\Dependencies\Windows\OpenAL\libs\Win32</AdditionalLibraryDirectories>
+      <TreatLinkerWarningAsErrors>
+      </TreatLinkerWarningAsErrors>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Emscripten'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\AT\Public\Include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>MSVCRT</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\AT\Public\Include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>MSVCRT</IgnoreSpecificDefaultLibraries>
+      <AdditionalDependencies>OpenAL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\AT\Dependencies\Windows\OpenAL\libs\Win64</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\AT\Public\Include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>OpenAL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Emscripten'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\AT\Public\Include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\AT\Public\Include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>OpenAL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\AT\Public\Include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AndroidSystemLibs>c;m;log;gcc;android;EGL;GLESv1_CM;OpenSLES</AndroidSystemLibs>
+    </Link>
+    <AntBuild>
+      <AntBuildPath>$(ProjectDir)\</AntBuildPath>
+      <JavaSourceDir>../AT/Private/Source/Android/src</JavaSourceDir>
+      <JVMHeapMaximum>128</JVMHeapMaximum>
+      <JVMHeapInitial>128</JVMHeapInitial>
+    </AntBuild>
+    <PreBuildEvent>
+      <Command>xcopy "$(SolutionDir)Media" "$(SolutionDir)assets" /I /S /Y</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\AT\Public\Include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AndroidSystemLibs>c;m;log;gcc;android;EGL;GLESv1_CM;OpenSLES</AndroidSystemLibs>
+    </Link>
+    <AntBuild>
+      <AntBuildPath>$(ProjectDir)\</AntBuildPath>
+      <JavaSourceDir>../AT/Private/Source/Android/src</JavaSourceDir>
+      <JVMHeapMaximum>256</JVMHeapMaximum>
+    </AntBuild>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AT\AT.vcxproj">
+      <Project>{30f55082-5283-4b4e-be43-8c82717126f8}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="audio\AudioAssets.cpp" />
+    <ClCompile Include="client\Client.cpp" />
+    <ClCompile Include="entities\Ball.cpp" />
+    <ClCompile Include="entities\BallManager.cpp" />
+    <ClCompile Include="entities\Block.cpp" />
+    <ClCompile Include="entities\BlockManager.cpp" />
+    <ClCompile Include="entities\Paddle.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameState.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="client\ClientConnection.cpp" />
+    <ClCompile Include="client\NSampleStorable.cpp" />
+    <ClCompile Include="Manager.cpp" />
+    <ClCompile Include="nuggeta\Nuggeta.cpp" />
+    <ClCompile Include="tools\Log.cpp" />
+    <ClCompile Include="ui\Text.cpp" />
+    <ClCompile Include="ui\UIManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="audio\AudioAssets.h" />
+    <ClInclude Include="client\Client.h" />
+    <ClInclude Include="client\Room.h" />
+    <ClInclude Include="entities\Ball.h" />
+    <ClInclude Include="entities\BallManager.h" />
+    <ClInclude Include="entities\Block.h" />
+    <ClInclude Include="entities\BlockManager.h" />
+    <ClInclude Include="entities\Paddle.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameState.h" />
+    <ClInclude Include="Manager.h" />
+    <ClInclude Include="nuggeta\AbstractNetworkConnection.h" />
+    <ClInclude Include="nuggeta\AbstractRoom.h" />
+    <ClInclude Include="nuggeta\AcceptFriendDemandRequest.h" />
+    <ClInclude Include="nuggeta\AcceptFriendDemandResponse.h" />
+    <ClInclude Include="nuggeta\AcceptFriendDemandResponseHandler.h" />
+    <ClInclude Include="nuggeta\AcceptFriendDemandStatus.h" />
+    <ClInclude Include="nuggeta\AcceptInvitationRequest.h" />
+    <ClInclude Include="nuggeta\AcceptInvitationResponse.h" />
+    <ClInclude Include="nuggeta\AcceptInvitationResponseHandler.h" />
+    <ClInclude Include="nuggeta\AcceptInvitationStatus.h" />
+    <ClInclude Include="nuggeta\AchieveRequest.h" />
+    <ClInclude Include="nuggeta\AchieveResponse.h" />
+    <ClInclude Include="nuggeta\AchieveResponseHandler.h" />
+    <ClInclude Include="nuggeta\AchieveStatus.h" />
+    <ClInclude Include="nuggeta\AchieveWithProgressRequest.h" />
+    <ClInclude Include="nuggeta\AdApi.h" />
+    <ClInclude Include="nuggeta\AdApiImpl.h" />
+    <ClInclude Include="nuggeta\AdContext.h" />
+    <ClInclude Include="nuggeta\AdDisplayedNotification.h" />
+    <ClInclude Include="nuggeta\AdminPublicMessage.h" />
+    <ClInclude Include="nuggeta\Api.h" />
+    <ClInclude Include="nuggeta\ApiTester.h" />
+    <ClInclude Include="nuggeta\AskForFriendByIdRequest.h" />
+    <ClInclude Include="nuggeta\AskForFriendByLoginRequest.h" />
+    <ClInclude Include="nuggeta\AskForFriendResponse.h" />
+    <ClInclude Include="nuggeta\AskForFriendResponseHandler.h" />
+    <ClInclude Include="nuggeta\AskForFriendStatus.h" />
+    <ClInclude Include="nuggeta\BannerAd.h" />
+    <ClInclude Include="nuggeta\BuyItemRequest.h" />
+    <ClInclude Include="nuggeta\BuyItemResponse.h" />
+    <ClInclude Include="nuggeta\BuyItemResponseHandler.h" />
+    <ClInclude Include="nuggeta\BuyItemStatus.h" />
+    <ClInclude Include="nuggeta\BuyProductNotification.h" />
+    <ClInclude Include="nuggeta\BuyProductUrl.h" />
+    <ClInclude Include="nuggeta\ByteBuffer.h" />
+    <ClInclude Include="nuggeta\ByteUtil.h" />
+    <ClInclude Include="nuggeta\ClientApplication.h" />
+    <ClInclude Include="nuggeta\ConnectionFailListener.h" />
+    <ClInclude Include="nuggeta\ConnectionFailListenerCollection.h" />
+    <ClInclude Include="nuggeta\ConnectionInterrupted.h" />
+    <ClInclude Include="nuggeta\ConnectionInterruptedHandler.h" />
+    <ClInclude Include="nuggeta\ConnectionInvalidVersionDetectedListener.h" />
+    <ClInclude Include="nuggeta\ConnectionInvalidVersionDetectedListenerCollection.h" />
+    <ClInclude Include="nuggeta\ConnectionListener.h" />
+    <ClInclude Include="nuggeta\ConnectionListenerCollection.h" />
+    <ClInclude Include="nuggeta\ConnectionLost.h" />
+    <ClInclude Include="nuggeta\ConnectionLostHandler.h" />
+    <ClInclude Include="nuggeta\ConnectionLostListener.h" />
+    <ClInclude Include="nuggeta\ConnectionLostListenerCollection.h" />
+    <ClInclude Include="nuggeta\ConnectionReadyListener.h" />
+    <ClInclude Include="nuggeta\ConnectionReadyListenerCollection.h" />
+    <ClInclude Include="nuggeta\ConnectionResumed.h" />
+    <ClInclude Include="nuggeta\ConnectionResumedHandler.h" />
+    <ClInclude Include="nuggeta\ConnectionState.h" />
+    <ClInclude Include="nuggeta\ConnectionStop.h" />
+    <ClInclude Include="nuggeta\ConnectionStopHandler.h" />
+    <ClInclude Include="nuggeta\ConsumeItemRequest.h" />
+    <ClInclude Include="nuggeta\ConsumeItemResponse.h" />
+    <ClInclude Include="nuggeta\ConsumeItemResponseHandler.h" />
+    <ClInclude Include="nuggeta\ConsumeItemStatus.h" />
+    <ClInclude Include="nuggeta\CppByteArray.h" />
+    <ClInclude Include="nuggeta\CppIntArray.h" />
+    <ClInclude Include="nuggeta\CreateGameRequest.h" />
+    <ClInclude Include="nuggeta\CreateGameResponse.h" />
+    <ClInclude Include="nuggeta\CreateGameResponseHandler.h" />
+    <ClInclude Include="nuggeta\CreateGameStatus.h" />
+    <ClInclude Include="nuggeta\DisconnectedContext.h" />
+    <ClInclude Include="nuggeta\Dispatcher.h" />
+    <ClInclude Include="nuggeta\DnsRequest.h" />
+    <ClInclude Include="nuggeta\DnsResponse.h" />
+    <ClInclude Include="nuggeta\DnsStatus.h" />
+    <ClInclude Include="nuggeta\ErrorCode.h" />
+    <ClInclude Include="nuggeta\ExecutionStatus.h" />
+    <ClInclude Include="nuggeta\FastDelegate.h" />
+    <ClInclude Include="nuggeta\FastDelegateBind.h" />
+    <ClInclude Include="nuggeta\FriendConnectedNotification.h" />
+    <ClInclude Include="nuggeta\FriendConnectedNotificationHandler.h" />
+    <ClInclude Include="nuggeta\FriendDemandNotification.h" />
+    <ClInclude Include="nuggeta\FriendDemandNotificationHandler.h" />
+    <ClInclude Include="nuggeta\FriendDisconnectedNotification.h" />
+    <ClInclude Include="nuggeta\FriendDisconnectedNotificationHandler.h" />
+    <ClInclude Include="nuggeta\FriendshipNotification.h" />
+    <ClInclude Include="nuggeta\FriendshipNotificationHandler.h" />
+    <ClInclude Include="nuggeta\GameChatNotification.h" />
+    <ClInclude Include="nuggeta\GameDispatcher.h" />
+    <ClInclude Include="nuggeta\GameMessage.h" />
+    <ClInclude Include="nuggeta\GameMessageAdapter.h" />
+    <ClInclude Include="nuggeta\GameMessageError.h" />
+    <ClInclude Include="nuggeta\GameMessageErrorHandler.h" />
+    <ClInclude Include="nuggeta\GameMessageListener.h" />
+    <ClInclude Include="nuggeta\GameRunningState.h" />
+    <ClInclude Include="nuggeta\GameStateChange.h" />
+    <ClInclude Include="nuggeta\GameStateChangeHandler.h" />
+    <ClInclude Include="nuggeta\GameStore.h" />
+    <ClInclude Include="nuggeta\GetAchievementBoardRequest.h" />
+    <ClInclude Include="nuggeta\GetAchievementBoardResponse.h" />
+    <ClInclude Include="nuggeta\GetAchievementBoardResponseHandler.h" />
+    <ClInclude Include="nuggeta\GetAchievementBoardStatus.h" />
+    <ClInclude Include="nuggeta\GetFriendDemandsRequest.h" />
+    <ClInclude Include="nuggeta\GetFriendDemandsResponse.h" />
+    <ClInclude Include="nuggeta\GetFriendDemandsResponseHandler.h" />
+    <ClInclude Include="nuggeta\GetFriendDemandsStatus.h" />
+    <ClInclude Include="nuggeta\GetFriendsByPlayerIdRequest.h" />
+    <ClInclude Include="nuggeta\GetFriendsRequest.h" />
+    <ClInclude Include="nuggeta\GetFriendsResponse.h" />
+    <ClInclude Include="nuggeta\GetFriendsResponseHandler.h" />
+    <ClInclude Include="nuggeta\GetFriendsStatus.h" />
+    <ClInclude Include="nuggeta\GetGamesRequest.h" />
+    <ClInclude Include="nuggeta\GetGamesResponse.h" />
+    <ClInclude Include="nuggeta\GetGamesResponseHandler.h" />
+    <ClInclude Include="nuggeta\GetGamesStatus.h" />
+    <ClInclude Include="nuggeta\GetGhostsRequest.h" />
+    <ClInclude Include="nuggeta\GetGhostsResponse.h" />
+    <ClInclude Include="nuggeta\GetGhostsResponseHandler.h" />
+    <ClInclude Include="nuggeta\GetGhostsStatus.h" />
+    <ClInclude Include="nuggeta\GetInvitationsRequest.h" />
+    <ClInclude Include="nuggeta\GetInvitationsResponse.h" />
+    <ClInclude Include="nuggeta\GetInvitationsResponseHandler.h" />
+    <ClInclude Include="nuggeta\GetInvitationsStatus.h" />
+    <ClInclude Include="nuggeta\GetLeaderboardRequest.h" />
+    <ClInclude Include="nuggeta\GetLeaderboardResponse.h" />
+    <ClInclude Include="nuggeta\GetLeaderboardResponseHandler.h" />
+    <ClInclude Include="nuggeta\GetLeaderboardStatus.h" />
+    <ClInclude Include="nuggeta\GetPlayerProfileByPlayerIdRequest.h" />
+    <ClInclude Include="nuggeta\GetPlayerProfileRequest.h" />
+    <ClInclude Include="nuggeta\GetPlayerProfileResponse.h" />
+    <ClInclude Include="nuggeta\GetPlayerProfileResponseHandler.h" />
+    <ClInclude Include="nuggeta\GetPlayerProfileStatus.h" />
+    <ClInclude Include="nuggeta\GetPlayerStorablesRequest.h" />
+    <ClInclude Include="nuggeta\GetPlayerStorablesResponse.h" />
+    <ClInclude Include="nuggeta\GetPlayerStorablesResponseHandler.h" />
+    <ClInclude Include="nuggeta\GetPlayerStorablesStatus.h" />
+    <ClInclude Include="nuggeta\GetPlayerWalletRequest.h" />
+    <ClInclude Include="nuggeta\GetPlayerWalletResponse.h" />
+    <ClInclude Include="nuggeta\GetPlayerWalletResponseHandler.h" />
+    <ClInclude Include="nuggeta\GetPlayerWalletStatus.h" />
+    <ClInclude Include="nuggeta\GetStorablesRequest.h" />
+    <ClInclude Include="nuggeta\GetStorablesResponse.h" />
+    <ClInclude Include="nuggeta\GetStorablesResponseHandler.h" />
+    <ClInclude Include="nuggeta\GetStorablesStatus.h" />
+    <ClInclude Include="nuggeta\GetStoreRequest.h" />
+    <ClInclude Include="nuggeta\GetStoreResponse.h" />
+    <ClInclude Include="nuggeta\GetStoreResponseHandler.h" />
+    <ClInclude Include="nuggeta\GetStoreStatus.h" />
+    <ClInclude Include="nuggeta\GetThirdPartyFriendsRequest.h" />
+    <ClInclude Include="nuggeta\GetThirdPartyFriendsResponse.h" />
+    <ClInclude Include="nuggeta\GetThirdPartyFriendsResponseHandler.h" />
+    <ClInclude Include="nuggeta\GetThirdPartyFriendsStatus.h" />
+    <ClInclude Include="nuggeta\Handshake.h" />
+    <ClInclude Include="nuggeta\HandshakeResponse.h" />
+    <ClInclude Include="nuggeta\HandshakeResponseHandler.h" />
+    <ClInclude Include="nuggeta\HandshakeState.h" />
+    <ClInclude Include="nuggeta\HeartBeatRequest.h" />
+    <ClInclude Include="nuggeta\HeartBeatResponse.h" />
+    <ClInclude Include="nuggeta\IncreasePlayerWalletRequest.h" />
+    <ClInclude Include="nuggeta\IncreasePlayerWalletResponse.h" />
+    <ClInclude Include="nuggeta\IncreasePlayerWalletResponseHandler.h" />
+    <ClInclude Include="nuggeta\IncreasePlayerWalletStatus.h" />
+    <ClInclude Include="nuggeta\InterstitialAd.h" />
+    <ClInclude Include="nuggeta\InvalidVersion.h" />
+    <ClInclude Include="nuggeta\InvitationAcceptedNotification.h" />
+    <ClInclude Include="nuggeta\InvitationExpiredNotification.h" />
+    <ClInclude Include="nuggeta\InvitationRefusedNotification.h" />
+    <ClInclude Include="nuggeta\InvitationRequestNotification.h" />
+    <ClInclude Include="nuggeta\InvitePlayerRequest.h" />
+    <ClInclude Include="nuggeta\InvitePlayerResponse.h" />
+    <ClInclude Include="nuggeta\InvitePlayerResponseHandler.h" />
+    <ClInclude Include="nuggeta\InvitePlayerStatus.h" />
+    <ClInclude Include="nuggeta\InviteThirdPartyFriendNotification.h" />
+    <ClInclude Include="nuggeta\InviteThirdPartyFriendRequest.h" />
+    <ClInclude Include="nuggeta\InviteThirdPartyFriendResponse.h" />
+    <ClInclude Include="nuggeta\InviteThirdPartyFriendResponseHandler.h" />
+    <ClInclude Include="nuggeta\InviteThirdPartyFriendStatus.h" />
+    <ClInclude Include="nuggeta\JoinGameRequest.h" />
+    <ClInclude Include="nuggeta\JoinGameResponse.h" />
+    <ClInclude Include="nuggeta\JoinGameResponseHandler.h" />
+    <ClInclude Include="nuggeta\JoinGameStatus.h" />
+    <ClInclude Include="nuggeta\LeaderboardOrder.h" />
+    <ClInclude Include="nuggeta\LeaderboardPeriod.h" />
+    <ClInclude Include="nuggeta\LoadGameRequest.h" />
+    <ClInclude Include="nuggeta\LoadGameResponse.h" />
+    <ClInclude Include="nuggeta\LoadGameResponseHandler.h" />
+    <ClInclude Include="nuggeta\LoadGameStatus.h" />
+    <ClInclude Include="nuggeta\LoadGhostRequest.h" />
+    <ClInclude Include="nuggeta\LoadGhostResponse.h" />
+    <ClInclude Include="nuggeta\LoadGhostResponseHandler.h" />
+    <ClInclude Include="nuggeta\LoadGhostStatus.h" />
+    <ClInclude Include="nuggeta\LoginRequest.h" />
+    <ClInclude Include="nuggeta\LoginResponse.h" />
+    <ClInclude Include="nuggeta\LoginResponseHandler.h" />
+    <ClInclude Include="nuggeta\LoginStatus.h" />
+    <ClInclude Include="nuggeta\LogLevel.h" />
+    <ClInclude Include="nuggeta\LogoutRequest.h" />
+    <ClInclude Include="nuggeta\LogoutResponse.h" />
+    <ClInclude Include="nuggeta\LogoutResponseHandler.h" />
+    <ClInclude Include="nuggeta\LogoutStatus.h" />
+    <ClInclude Include="nuggeta\MatchMakingType.h" />
+    <ClInclude Include="nuggeta\MemoryManagement.h" />
+    <ClInclude Include="nuggeta\Message.h" />
+    <ClInclude Include="nuggeta\MessageListener.h" />
+    <ClInclude Include="nuggeta\MyTurnNotification.h" />
+    <ClInclude Include="nuggeta\MyTurnNotificationHandler.h" />
+    <ClInclude Include="nuggeta\NAchievement.h" />
+    <ClInclude Include="nuggeta\NAchievementBoard.h" />
+    <ClInclude Include="nuggeta\NAchievementType.h" />
+    <ClInclude Include="nuggeta\NArrays.h" />
+    <ClInclude Include="nuggeta\NCoinPackage.h" />
+    <ClInclude Include="nuggeta\NDate.h" />
+    <ClInclude Include="nuggeta\Net.h" />
+    <ClInclude Include="nuggeta\NetConnectionDrainHandler.h" />
+    <ClInclude Include="nuggeta\NetConnectionFailHandler.h" />
+    <ClInclude Include="nuggeta\NetConnectionLostHandler.h" />
+    <ClInclude Include="nuggeta\NetConnectionOpenedHandler.h" />
+    <ClInclude Include="nuggeta\NetConnectionReceivedHandler.h" />
+    <ClInclude Include="nuggeta\NetConnectionSendFailHandler.h" />
+    <ClInclude Include="nuggeta\NetConnectionSendSuccessHandler.h" />
+    <ClInclude Include="nuggeta\NetWin32.h" />
+    <ClInclude Include="nuggeta\NextPlayerTurnRequest.h" />
+    <ClInclude Include="nuggeta\NextPlayerTurnResponse.h" />
+    <ClInclude Include="nuggeta\NextPlayerTurnResponseHandler.h" />
+    <ClInclude Include="nuggeta\NextPlayerTurnStatus.h" />
+    <ClInclude Include="nuggeta\NFileUtilsWin32.h" />
+    <ClInclude Include="nuggeta\NFriendDemand.h" />
+    <ClInclude Include="nuggeta\NFriendDemandStatus.h" />
+    <ClInclude Include="nuggeta\NGame.h" />
+    <ClInclude Include="nuggeta\NGameCharacteristics.h" />
+    <ClInclude Include="nuggeta\NGameInvitation.h" />
+    <ClInclude Include="nuggeta\NGameState.h" />
+    <ClInclude Include="nuggeta\NHttpRequest.h" />
+    <ClInclude Include="nuggeta\NHttpRequestImpl.h" />
+    <ClInclude Include="nuggeta\NInvitation.h" />
+    <ClInclude Include="nuggeta\NInvitationStatus.h" />
+    <ClInclude Include="nuggeta\NItem.h" />
+    <ClInclude Include="nuggeta\NLeaderboard.h" />
+    <ClInclude Include="nuggeta\NLeaderboardEntry.h" />
+    <ClInclude Include="nuggeta\NLogger.h" />
+    <ClInclude Include="nuggeta\NLoggerFactory.h" />
+    <ClInclude Include="nuggeta\NLoggerImpl.h" />
+    <ClInclude Include="nuggeta\NMap.h" />
+    <ClInclude Include="nuggeta\NMatchMakingConditions.h" />
+    <ClInclude Include="nuggeta\NMath.h" />
+    <ClInclude Include="nuggeta\NMatrix2.h" />
+    <ClInclude Include="nuggeta\Notifications.h" />
+    <ClInclude Include="nuggeta\NPlayer.h" />
+    <ClInclude Include="nuggeta\NPlayerProfile.h" />
+    <ClInclude Include="nuggeta\NPlayerWallet.h" />
+    <ClInclude Include="nuggeta\NRawMessage.h" />
+    <ClInclude Include="nuggeta\NRoom.h" />
+    <ClInclude Include="client\ClientConnection.h" />
+    <ClInclude Include="client\NSampleProtocol.h" />
+    <ClInclude Include="client\NSampleStorable.h" />
+    <ClInclude Include="nuggeta\NScore.h" />
+    <ClInclude Include="nuggeta\NSocket.h" />
+    <ClInclude Include="nuggeta\NSocketImpl.h" />
+    <ClInclude Include="nuggeta\NSocketImplBSD.h" />
+    <ClInclude Include="nuggeta\NSocketImplWin32.h" />
+    <ClInclude Include="nuggeta\NStorage.h" />
+    <ClInclude Include="nuggeta\NStorageWin32.h" />
+    <ClInclude Include="nuggeta\NStore.h" />
+    <ClInclude Include="nuggeta\NSystem.h" />
+    <ClInclude Include="nuggeta\NuggetaDispatcher.h" />
+    <ClInclude Include="nuggeta\NuggetaException.h" />
+    <ClInclude Include="nuggeta\NuggetaExceptionHandler.h" />
+    <ClInclude Include="nuggeta\NuggetaLevel.h" />
+    <ClInclude Include="nuggeta\NuggetaMessageAdapter.h" />
+    <ClInclude Include="nuggeta\NuggetaMessageListener.h" />
+    <ClInclude Include="nuggeta\NuggetaPlug.h" />
+    <ClInclude Include="nuggeta\NuggetaPlugApi.h" />
+    <ClInclude Include="nuggeta\NuggetaQuery.h" />
+    <ClInclude Include="nuggeta\NuggetaSocialFacebook.h" />
+    <ClInclude Include="nuggeta\NUrlEncoder.h" />
+    <ClInclude Include="nuggeta\NUtils.h" />
+    <ClInclude Include="nuggeta\NWorldUpdate.h" />
+    <ClInclude Include="nuggeta\OpenConnection.h" />
+    <ClInclude Include="nuggeta\OpenConnectionHandler.h" />
+    <ClInclude Include="nuggeta\OpenUrl.h" />
+    <ClInclude Include="nuggeta\OpenUrlData.h" />
+    <ClInclude Include="nuggeta\PauseSessionMonitoringRequest.h" />
+    <ClInclude Include="nuggeta\PauseSessionMonitoringResponse.h" />
+    <ClInclude Include="nuggeta\PauseSessionMonitoringResponseHandler.h" />
+    <ClInclude Include="nuggeta\PauseSessionMonitoringStatus.h" />
+    <ClInclude Include="nuggeta\Period.h" />
+    <ClInclude Include="nuggeta\Platform.h" />
+    <ClInclude Include="nuggeta\PlayerEnterGame.h" />
+    <ClInclude Include="nuggeta\PlayerEnterGameHandler.h" />
+    <ClInclude Include="nuggeta\PlayerMessage.h" />
+    <ClInclude Include="nuggeta\PlayerSessionType.h" />
+    <ClInclude Include="nuggeta\PlayerState.h" />
+    <ClInclude Include="nuggeta\PlayerTurnNotification.h" />
+    <ClInclude Include="nuggeta\PlayerTurnNotificationHandler.h" />
+    <ClInclude Include="nuggeta\PlayerUnjoinGame.h" />
+    <ClInclude Include="nuggeta\PlayerUnjoinGameHandler.h" />
+    <ClInclude Include="nuggeta\PublicServer.h" />
+    <ClInclude Include="nuggeta\PublishFriendThirdPartyMessageRequest.h" />
+    <ClInclude Include="nuggeta\PublishFriendThirdPartyMessageResponse.h" />
+    <ClInclude Include="nuggeta\PublishFriendThirdPartyMessageResponseHandler.h" />
+    <ClInclude Include="nuggeta\PublishFriendThirdPartyMessageStatus.h" />
+    <ClInclude Include="nuggeta\PublishThirdPartyMessageRequest.h" />
+    <ClInclude Include="nuggeta\PublishThirdPartyMessageResponse.h" />
+    <ClInclude Include="nuggeta\PublishThirdPartyMessageResponseHandler.h" />
+    <ClInclude Include="nuggeta\PublishThirdPartyMessageStatus.h" />
+    <ClInclude Include="nuggeta\Pump.h" />
+    <ClInclude Include="nuggeta\RawMessageHandler.h" />
+    <ClInclude Include="nuggeta\RefuseFriendDemandRequest.h" />
+    <ClInclude Include="nuggeta\RefuseFriendDemandResponse.h" />
+    <ClInclude Include="nuggeta\RefuseFriendDemandResponseHandler.h" />
+    <ClInclude Include="nuggeta\RefuseFriendDemandStatus.h" />
+    <ClInclude Include="nuggeta\RefuseInvitationRequest.h" />
+    <ClInclude Include="nuggeta\RefuseInvitationResponse.h" />
+    <ClInclude Include="nuggeta\RefuseInvitationResponseHandler.h" />
+    <ClInclude Include="nuggeta\RefuseInvitationStatus.h" />
+    <ClInclude Include="nuggeta\RemovePlayerStorableRequest.h" />
+    <ClInclude Include="nuggeta\RemovePlayerStorableResponse.h" />
+    <ClInclude Include="nuggeta\RemovePlayerStorableResponseHandler.h" />
+    <ClInclude Include="nuggeta\RemovePlayerStorableStatus.h" />
+    <ClInclude Include="nuggeta\RemoveStorableRequest.h" />
+    <ClInclude Include="nuggeta\RemoveStorableResponse.h" />
+    <ClInclude Include="nuggeta\RemoveStorableResponseHandler.h" />
+    <ClInclude Include="nuggeta\RemoveStorableStatus.h" />
+    <ClInclude Include="nuggeta\ResumeSessionMonitoringRequest.h" />
+    <ClInclude Include="nuggeta\ResumeSessionMonitoringResponse.h" />
+    <ClInclude Include="nuggeta\ResumeSessionMonitoringResponseHandler.h" />
+    <ClInclude Include="nuggeta\ResumeSessionMonitoringStatus.h" />
+    <ClInclude Include="nuggeta\SaveAsGhostRequest.h" />
+    <ClInclude Include="nuggeta\SaveAsGhostResponse.h" />
+    <ClInclude Include="nuggeta\SaveAsGhostResponseHandler.h" />
+    <ClInclude Include="nuggeta\SaveAsGhostStatus.h" />
+    <ClInclude Include="nuggeta\SaveGameRequest.h" />
+    <ClInclude Include="nuggeta\SaveGameResponse.h" />
+    <ClInclude Include="nuggeta\SaveGameResponseHandler.h" />
+    <ClInclude Include="nuggeta\SaveGameStatus.h" />
+    <ClInclude Include="nuggeta\SavePlayerProfileRequest.h" />
+    <ClInclude Include="nuggeta\SavePlayerProfileResponse.h" />
+    <ClInclude Include="nuggeta\SavePlayerProfileResponseHandler.h" />
+    <ClInclude Include="nuggeta\SavePlayerProfileStatus.h" />
+    <ClInclude Include="nuggeta\SavePlayerStorableRequest.h" />
+    <ClInclude Include="nuggeta\SavePlayerStorableResponse.h" />
+    <ClInclude Include="nuggeta\SavePlayerStorableResponseHandler.h" />
+    <ClInclude Include="nuggeta\SavePlayerStorableStatus.h" />
+    <ClInclude Include="nuggeta\SaveStorableRequest.h" />
+    <ClInclude Include="nuggeta\SaveStorableResponse.h" />
+    <ClInclude Include="nuggeta\SaveStorableResponseHandler.h" />
+    <ClInclude Include="nuggeta\SaveStorableStatus.h" />
+    <ClInclude Include="nuggeta\SearchImmediateGameByConditionsRequest.h" />
+    <ClInclude Include="nuggeta\SearchImmediateGameRequest.h" />
+    <ClInclude Include="nuggeta\SearchImmediateGameResponse.h" />
+    <ClInclude Include="nuggeta\SearchImmediateGameResponseHandler.h" />
+    <ClInclude Include="nuggeta\SearchImmediateGameStatus.h" />
+    <ClInclude Include="nuggeta\SecurityUtils.h" />
+    <ClInclude Include="nuggeta\SendGameChatRequest.h" />
+    <ClInclude Include="nuggeta\SendGameChatResponse.h" />
+    <ClInclude Include="nuggeta\SendGameChatResponseHandler.h" />
+    <ClInclude Include="nuggeta\SendGameChatStatus.h" />
+    <ClInclude Include="nuggeta\SendGameChatToPlayerListRequest.h" />
+    <ClInclude Include="nuggeta\SendGameChatToPlayerRequest.h" />
+    <ClInclude Include="nuggeta\Serializable.h" />
+    <ClInclude Include="nuggeta\SessionExpired.h" />
+    <ClInclude Include="nuggeta\SessionExpiredHandler.h" />
+    <ClInclude Include="nuggeta\SetPlayerNameRequest.h" />
+    <ClInclude Include="nuggeta\SetPlayerNameResponse.h" />
+    <ClInclude Include="nuggeta\SetPlayerNameResponseHandler.h" />
+    <ClInclude Include="nuggeta\SetPlayerNameStatus.h" />
+    <ClInclude Include="nuggeta\SignUpRequest.h" />
+    <ClInclude Include="nuggeta\SignUpResponse.h" />
+    <ClInclude Include="nuggeta\SignUpResponseHandler.h" />
+    <ClInclude Include="nuggeta\SignUpStatus.h" />
+    <ClInclude Include="nuggeta\StartDetails.h" />
+    <ClInclude Include="nuggeta\StartGameRequest.h" />
+    <ClInclude Include="nuggeta\StartGameResponse.h" />
+    <ClInclude Include="nuggeta\StartGameResponseHandler.h" />
+    <ClInclude Include="nuggeta\StartGameStatus.h" />
+    <ClInclude Include="nuggeta\StartRequest.h" />
+    <ClInclude Include="nuggeta\StartResponse.h" />
+    <ClInclude Include="nuggeta\StartResponseHandler.h" />
+    <ClInclude Include="nuggeta\StartStatus.h" />
+    <ClInclude Include="nuggeta\StopGameRequest.h" />
+    <ClInclude Include="nuggeta\StopGameResponse.h" />
+    <ClInclude Include="nuggeta\StopGameResponseHandler.h" />
+    <ClInclude Include="nuggeta\StopGameStatus.h" />
+    <ClInclude Include="nuggeta\StopPlugConnectionRequest.h" />
+    <ClInclude Include="nuggeta\StopPlugConnectionResponse.h" />
+    <ClInclude Include="nuggeta\Storable.h" />
+    <ClInclude Include="nuggeta\StorableSample.h" />
+    <ClInclude Include="nuggeta\StringBuilder.h" />
+    <ClInclude Include="nuggeta\SubmitScoreRequest.h" />
+    <ClInclude Include="nuggeta\SubmitScoreResponse.h" />
+    <ClInclude Include="nuggeta\SubmitScoreResponseHandler.h" />
+    <ClInclude Include="nuggeta\SubmitScoreStatus.h" />
+    <ClInclude Include="nuggeta\SubmitScoreWithPlayerNameRequest.h" />
+    <ClInclude Include="nuggeta\SwitchToServerInformation.h" />
+    <ClInclude Include="nuggeta\T791.h" />
+    <ClInclude Include="nuggeta\T792.h" />
+    <ClInclude Include="nuggeta\T793.h" />
+    <ClInclude Include="nuggeta\T794.h" />
+    <ClInclude Include="nuggeta\T795.h" />
+    <ClInclude Include="nuggeta\T796.h" />
+    <ClInclude Include="nuggeta\T797.h" />
+    <ClInclude Include="nuggeta\T798.h" />
+    <ClInclude Include="nuggeta\T799.h" />
+    <ClInclude Include="nuggeta\T800.h" />
+    <ClInclude Include="nuggeta\T801.h" />
+    <ClInclude Include="nuggeta\T802.h" />
+    <ClInclude Include="nuggeta\T803.h" />
+    <ClInclude Include="nuggeta\T804.h" />
+    <ClInclude Include="nuggeta\T805.h" />
+    <ClInclude Include="nuggeta\T806.h" />
+    <ClInclude Include="nuggeta\T807.h" />
+    <ClInclude Include="nuggeta\T808.h" />
+    <ClInclude Include="nuggeta\T809.h" />
+    <ClInclude Include="nuggeta\T810.h" />
+    <ClInclude Include="nuggeta\T811.h" />
+    <ClInclude Include="nuggeta\T812.h" />
+    <ClInclude Include="nuggeta\T813.h" />
+    <ClInclude Include="nuggeta\T814.h" />
+    <ClInclude Include="nuggeta\T815.h" />
+    <ClInclude Include="nuggeta\T816.h" />
+    <ClInclude Include="nuggeta\T817.h" />
+    <ClInclude Include="nuggeta\T818.h" />
+    <ClInclude Include="nuggeta\T819.h" />
+    <ClInclude Include="nuggeta\TestPrimitiveList.h" />
+    <ClInclude Include="nuggeta\ThirdPartyLoginRequest.h" />
+    <ClInclude Include="nuggeta\ThirdPartyLoginResponse.h" />
+    <ClInclude Include="nuggeta\ThirdPartyLoginResponseHandler.h" />
+    <ClInclude Include="nuggeta\ThirdPartyLoginStatus.h" />
+    <ClInclude Include="nuggeta\ThirdPartyLoginWithTokenRequest.h" />
+    <ClInclude Include="nuggeta\ThirdPartySource.h" />
+    <ClInclude Include="nuggeta\TurnBasedContext.h" />
+    <ClInclude Include="nuggeta\UnjoinGameRequest.h" />
+    <ClInclude Include="nuggeta\UnjoinGameResponse.h" />
+    <ClInclude Include="nuggeta\UnjoinGameResponseHandler.h" />
+    <ClInclude Include="nuggeta\UnjoinGameStatus.h" />
+    <ClInclude Include="nuggeta\UpdatePlayerStorableRequest.h" />
+    <ClInclude Include="nuggeta\UpdatePlayerStorableResponse.h" />
+    <ClInclude Include="nuggeta\UpdatePlayerStorableResponseHandler.h" />
+    <ClInclude Include="nuggeta\UpdatePlayerStorableStatus.h" />
+    <ClInclude Include="nuggeta\UpdateStorableRequest.h" />
+    <ClInclude Include="nuggeta\UpdateStorableResponse.h" />
+    <ClInclude Include="nuggeta\UpdateStorableResponseHandler.h" />
+    <ClInclude Include="nuggeta\UpdateStorableStatus.h" />
+    <ClInclude Include="nuggeta\Utils.h" />
+    <ClInclude Include="tools\Log.h" />
+    <ClInclude Include="ui\Text.h" />
+    <ClInclude Include="ui\UIManager.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

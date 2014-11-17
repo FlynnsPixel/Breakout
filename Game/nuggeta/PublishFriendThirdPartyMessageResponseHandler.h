@@ -1,0 +1,8 @@
+#ifndef _PUBLISHFRIENDTHIRDPARTYMESSAGERESPONSEHANDLER
+#define _PUBLISHFRIENDTHIRDPARTYMESSAGERESPONSEHANDLER
+#include "PublishFriendThirdPartyMessageResponse.h"
+
+#include "FastDelegate.h"
+typedef fastdelegate::FastDelegate1<PublishFriendThirdPartyMessageResponse*>PublishFriendThirdPartyMessageResponseHandler;
+
+#endif // _PUBLISHFRIENDTHIRDPARTYMESSAGERESPONSEHANDLER

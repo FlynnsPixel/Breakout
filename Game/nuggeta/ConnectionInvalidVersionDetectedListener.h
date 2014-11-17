@@ -1,0 +1,7 @@
+#ifndef _CONNECTIONINVALIDVERSIONDETECTEDLISTENER
+#define _CONNECTIONINVALIDVERSIONDETECTEDLISTENER
+
+#include "FastDelegate.h"
+typedef fastdelegate::FastDelegate0<>ConnectionInvalidVersionDetectedListener;
+
+#endif // _CONNECTIONINVALIDVERSIONDETECTEDLISTENER

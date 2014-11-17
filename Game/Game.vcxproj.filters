@@ -1,0 +1,1439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="nuggeta\Nuggeta.cpp">
+      <Filter>nuggeta</Filter>
+    </ClCompile>
+    <ClCompile Include="client\Client.cpp">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\Log.cpp">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="entities\Paddle.cpp">
+      <Filter>entities</Filter>
+    </ClCompile>
+    <ClCompile Include="entities\Ball.cpp">
+      <Filter>entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager.cpp" />
+    <ClCompile Include="client\ClientConnection.cpp">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="client\NSampleStorable.cpp">
+      <Filter>client\nlib</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\UIManager.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\Text.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="entities\Block.cpp">
+      <Filter>entities</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState.cpp">
+      <Filter>state</Filter>
+    </ClCompile>
+    <ClCompile Include="entities\BlockManager.cpp">
+      <Filter>entities\managers</Filter>
+    </ClCompile>
+    <ClCompile Include="entities\BallManager.cpp">
+      <Filter>entities\managers</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\AudioAssets.cpp">
+      <Filter>audio</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="nuggeta\AbstractNetworkConnection.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\AbstractRoom.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\AcceptFriendDemandRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\AcceptFriendDemandResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\AcceptFriendDemandResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\AcceptFriendDemandStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\AcceptInvitationRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\AcceptInvitationResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\AcceptInvitationResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\AcceptInvitationStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\AchieveRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\AchieveResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\AchieveResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\AchieveStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\AchieveWithProgressRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\AdApi.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\AdApiImpl.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\AdContext.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\AdDisplayedNotification.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\AdminPublicMessage.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\Api.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ApiTester.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\AskForFriendByIdRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\AskForFriendByLoginRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\AskForFriendResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\AskForFriendResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\AskForFriendStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\BannerAd.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\BuyItemRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\BuyItemResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\BuyItemResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\BuyItemStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\BuyProductNotification.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\BuyProductUrl.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ByteBuffer.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ByteUtil.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ClientApplication.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ConnectionFailListener.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ConnectionFailListenerCollection.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ConnectionInterrupted.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ConnectionInterruptedHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ConnectionInvalidVersionDetectedListener.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ConnectionInvalidVersionDetectedListenerCollection.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ConnectionListener.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ConnectionListenerCollection.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ConnectionLost.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ConnectionLostHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ConnectionLostListener.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ConnectionLostListenerCollection.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ConnectionReadyListener.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ConnectionReadyListenerCollection.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ConnectionResumed.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ConnectionResumedHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ConnectionState.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ConnectionStop.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ConnectionStopHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ConsumeItemRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ConsumeItemResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ConsumeItemResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ConsumeItemStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\CppByteArray.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\CppIntArray.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\CreateGameRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\CreateGameResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\CreateGameResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\CreateGameStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\DisconnectedContext.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\Dispatcher.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\DnsRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\DnsResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\DnsStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ErrorCode.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ExecutionStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\FastDelegate.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\FastDelegateBind.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\FriendConnectedNotification.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\FriendConnectedNotificationHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\FriendDemandNotification.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\FriendDemandNotificationHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\FriendDisconnectedNotification.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\FriendDisconnectedNotificationHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\FriendshipNotification.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\FriendshipNotificationHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GameChatNotification.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GameDispatcher.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GameMessage.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GameMessageAdapter.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GameMessageError.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GameMessageErrorHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GameMessageListener.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GameRunningState.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GameStateChange.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GameStateChangeHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GameStore.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetAchievementBoardRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetAchievementBoardResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetAchievementBoardResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetAchievementBoardStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetFriendDemandsRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetFriendDemandsResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetFriendDemandsResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetFriendDemandsStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetFriendsByPlayerIdRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetFriendsRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetFriendsResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetFriendsResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetFriendsStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetGamesRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetGamesResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetGamesResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetGamesStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetGhostsRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetGhostsResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetGhostsResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetGhostsStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetInvitationsRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetInvitationsResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetInvitationsResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetInvitationsStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetLeaderboardRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetLeaderboardResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetLeaderboardResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetLeaderboardStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetPlayerProfileByPlayerIdRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetPlayerProfileRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetPlayerProfileResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetPlayerProfileResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetPlayerProfileStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetPlayerStorablesRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetPlayerStorablesResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetPlayerStorablesResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetPlayerStorablesStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetPlayerWalletRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetPlayerWalletResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetPlayerWalletResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetPlayerWalletStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetStorablesRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetStorablesResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetStorablesResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetStorablesStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetStoreRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetStoreResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetStoreResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetStoreStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetThirdPartyFriendsRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetThirdPartyFriendsResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetThirdPartyFriendsResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\GetThirdPartyFriendsStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\Handshake.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\HandshakeResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\HandshakeResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\HandshakeState.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\HeartBeatRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\HeartBeatResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\IncreasePlayerWalletRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\IncreasePlayerWalletResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\IncreasePlayerWalletResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\IncreasePlayerWalletStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\InterstitialAd.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\InvalidVersion.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\InvitationAcceptedNotification.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\InvitationExpiredNotification.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\InvitationRefusedNotification.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\InvitationRequestNotification.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\InvitePlayerRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\InvitePlayerResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\InvitePlayerResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\InvitePlayerStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\InviteThirdPartyFriendNotification.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\InviteThirdPartyFriendRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\InviteThirdPartyFriendResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\InviteThirdPartyFriendResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\InviteThirdPartyFriendStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\JoinGameRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\JoinGameResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\JoinGameResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\JoinGameStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\LeaderboardOrder.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\LeaderboardPeriod.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\LoadGameRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\LoadGameResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\LoadGameResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\LoadGameStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\LoadGhostRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\LoadGhostResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\LoadGhostResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\LoadGhostStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\LoginRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\LoginResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\LoginResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\LoginStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\LogLevel.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\LogoutRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\LogoutResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\LogoutResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\LogoutStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\MatchMakingType.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\MemoryManagement.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\Message.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\MessageListener.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\MyTurnNotification.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\MyTurnNotificationHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NAchievement.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NAchievementBoard.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NAchievementType.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NArrays.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NCoinPackage.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NDate.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\Net.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NetConnectionDrainHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NetConnectionFailHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NetConnectionLostHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NetConnectionOpenedHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NetConnectionReceivedHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NetConnectionSendFailHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NetConnectionSendSuccessHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NetWin32.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NextPlayerTurnRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NextPlayerTurnResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NextPlayerTurnResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NextPlayerTurnStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NFileUtilsWin32.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NFriendDemand.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NFriendDemandStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NGame.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NGameCharacteristics.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NGameInvitation.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NGameState.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NHttpRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NHttpRequestImpl.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NInvitation.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NInvitationStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NItem.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NLeaderboard.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NLeaderboardEntry.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NLogger.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NLoggerFactory.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NLoggerImpl.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NMap.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NMatchMakingConditions.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NMath.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NMatrix2.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\Notifications.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NPlayer.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NPlayerProfile.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NPlayerWallet.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NRawMessage.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NRoom.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NScore.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NSocket.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NSocketImpl.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NSocketImplBSD.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NSocketImplWin32.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NStorage.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NStorageWin32.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NStore.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NSystem.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NuggetaDispatcher.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NuggetaException.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NuggetaExceptionHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NuggetaLevel.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NuggetaMessageAdapter.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NuggetaMessageListener.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NuggetaPlug.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NuggetaPlugApi.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NuggetaQuery.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NuggetaSocialFacebook.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NUrlEncoder.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NUtils.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\NWorldUpdate.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\OpenConnection.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\OpenConnectionHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\OpenUrl.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\OpenUrlData.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\PauseSessionMonitoringRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\PauseSessionMonitoringResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\PauseSessionMonitoringResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\PauseSessionMonitoringStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\Period.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\Platform.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\PlayerEnterGame.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\PlayerEnterGameHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\PlayerMessage.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\PlayerSessionType.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\PlayerState.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\PlayerTurnNotification.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\PlayerTurnNotificationHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\PlayerUnjoinGame.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\PlayerUnjoinGameHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\PublicServer.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\PublishFriendThirdPartyMessageRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\PublishFriendThirdPartyMessageResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\PublishFriendThirdPartyMessageResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\PublishFriendThirdPartyMessageStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\PublishThirdPartyMessageRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\PublishThirdPartyMessageResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\PublishThirdPartyMessageResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\PublishThirdPartyMessageStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\Pump.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\RawMessageHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\RefuseFriendDemandRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\RefuseFriendDemandResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\RefuseFriendDemandResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\RefuseFriendDemandStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\RefuseInvitationRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\RefuseInvitationResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\RefuseInvitationResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\RefuseInvitationStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\RemovePlayerStorableRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\RemovePlayerStorableResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\RemovePlayerStorableResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\RemovePlayerStorableStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\RemoveStorableRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\RemoveStorableResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\RemoveStorableResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\RemoveStorableStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ResumeSessionMonitoringRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ResumeSessionMonitoringResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ResumeSessionMonitoringResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ResumeSessionMonitoringStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SaveAsGhostRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SaveAsGhostResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SaveAsGhostResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SaveAsGhostStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SaveGameRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SaveGameResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SaveGameResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SaveGameStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SavePlayerProfileRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SavePlayerProfileResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SavePlayerProfileResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SavePlayerProfileStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SavePlayerStorableRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SavePlayerStorableResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SavePlayerStorableResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SavePlayerStorableStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SaveStorableRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SaveStorableResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SaveStorableResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SaveStorableStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SearchImmediateGameByConditionsRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SearchImmediateGameRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SearchImmediateGameResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SearchImmediateGameResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SearchImmediateGameStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SecurityUtils.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SendGameChatRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SendGameChatResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SendGameChatResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SendGameChatStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SendGameChatToPlayerListRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SendGameChatToPlayerRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\Serializable.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SessionExpired.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SessionExpiredHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SetPlayerNameRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SetPlayerNameResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SetPlayerNameResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SetPlayerNameStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SignUpRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SignUpResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SignUpResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SignUpStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\StartDetails.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\StartGameRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\StartGameResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\StartGameResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\StartGameStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\StartRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\StartResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\StartResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\StartStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\StopGameRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\StopGameResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\StopGameResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\StopGameStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\StopPlugConnectionRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\StopPlugConnectionResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\Storable.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\StorableSample.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\StringBuilder.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SubmitScoreRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SubmitScoreResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SubmitScoreResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SubmitScoreStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SubmitScoreWithPlayerNameRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\SwitchToServerInformation.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\T791.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\T792.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\T793.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\T794.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\T795.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\T796.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\T797.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\T798.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\T799.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\T800.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\T801.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\T802.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\T803.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\T804.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\T805.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\T806.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\T807.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\T808.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\T809.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\T810.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\T811.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\T812.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\T813.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\T814.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\T815.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\T816.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\T817.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\T818.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\T819.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\TestPrimitiveList.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ThirdPartyLoginRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ThirdPartyLoginResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ThirdPartyLoginResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ThirdPartyLoginStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ThirdPartyLoginWithTokenRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\ThirdPartySource.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\TurnBasedContext.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\UnjoinGameRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\UnjoinGameResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\UnjoinGameResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\UnjoinGameStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\UpdatePlayerStorableRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\UpdatePlayerStorableResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\UpdatePlayerStorableResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\UpdatePlayerStorableStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\UpdateStorableRequest.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\UpdateStorableResponse.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\UpdateStorableResponseHandler.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\UpdateStorableStatus.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="nuggeta\Utils.h">
+      <Filter>nuggeta</Filter>
+    </ClInclude>
+    <ClInclude Include="client\Client.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\Log.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="entities\Paddle.h">
+      <Filter>entities</Filter>
+    </ClInclude>
+    <ClInclude Include="entities\Ball.h">
+      <Filter>entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager.h" />
+    <ClInclude Include="client\ClientConnection.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="client\NSampleProtocol.h">
+      <Filter>client\nlib</Filter>
+    </ClInclude>
+    <ClInclude Include="client\NSampleStorable.h">
+      <Filter>client\nlib</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\UIManager.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\Text.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="entities\Block.h">
+      <Filter>entities</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState.h">
+      <Filter>state</Filter>
+    </ClInclude>
+    <ClInclude Include="client\Room.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="entities\BlockManager.h">
+      <Filter>entities\managers</Filter>
+    </ClInclude>
+    <ClInclude Include="entities\BallManager.h">
+      <Filter>entities\managers</Filter>
+    </ClInclude>
+    <ClInclude Include="audio\AudioAssets.h">
+      <Filter>audio</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="nuggeta">
+      <UniqueIdentifier>{5c69fc39-9498-42f3-b9c4-b7b597426750}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="entities">
+      <UniqueIdentifier>{95d0575a-24cc-4011-828e-07ece919ba4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{c10802a6-5b3e-467c-b622-7423120426b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client">
+      <UniqueIdentifier>{43b83504-f84f-40bb-b9c8-32855cdf18ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client\nlib">
+      <UniqueIdentifier>{cd8a2823-dc09-4a26-b68b-ce597ed11cd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{4054dfeb-017c-4ed8-92df-0853b5c74515}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="state">
+      <UniqueIdentifier>{187c2f86-e858-40f2-99d2-dfbccb203c32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="entities\managers">
+      <UniqueIdentifier>{42823cb7-d694-449e-8a4a-2f562fc62833}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio">
+      <UniqueIdentifier>{302f6a19-2f12-40bd-979a-ecdc353bbdb3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
