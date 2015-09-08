@@ -1,7 +1,7 @@
 Breakout
 ========
 
-Simple breakout clone done in c++ and Arctic Game Engine. I had just started learning c++ when I wrote this for a university assignment, so be prepared for bad code.
+Simple breakout clone done in c++ and Arctic Game Engine made in August, 2014. I had just started learning c++ when I wrote this for a university assignment, so be prepared for bad code.
 
 If you want to compile the project, the engine can be found here:
 http://code.google.com/p/arcticgameengine/
